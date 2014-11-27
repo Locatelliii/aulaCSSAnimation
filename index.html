@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- http://www.justinaguilar.com/animations/index.html -->
+<html>
+    <head>
+        <title>CSS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <link rel="stylesheet" href="css/animations.css">
+        <style>
+            #boleta {
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+                background-image: url("img/bolapronta.png");
+            }
+
+        </style>
+    </head>
+    <script>
+	$(window).scroll(function() {
+		$('#animatedElement').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+100) {
+				$(this).addClass("slideUp");
+			}
+		});
+	});
+</script>
+<script>
+	$('#animatedElement').click(function() {
+		$(this).addClass("slideUp");
+	});
+</script>
+    <body>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="boleta" class="slideExpandUp"></div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </body>
+</html>
