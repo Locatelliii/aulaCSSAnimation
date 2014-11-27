@@ -4,8 +4,23 @@
         <title>Exemplo de CSS3 Transition</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                background: violet;
+                transition: width 2s, height 2s, transform 5s; 
+            }
+            
+            div:hover {
+                width: 200px;
+                height: 200px;
+                transform: rotate(180deg);
+            }
+            
+        </style>
     </head>
     <body>
-        <div>HUE</div>
+        <div>Conteúdo</div>
     </body>
 </html>
